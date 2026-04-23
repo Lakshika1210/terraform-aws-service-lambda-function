@@ -1,16 +1,22 @@
-# Service Lambda Function
 
-## Overview
-This module creates an AWS Lambda function.
+---
 
-## Usage
+## ✅ For Lambda module
 
-```hcl
-module "lambda" {
-  source  = "app.terraform.io/nipun-org/service-lambda-function/aws"
-  version = "1.0.0"
+Add same structure (overview + inputs + outputs)
 
-  function_name = "my-function"
-  role          = "arn:aws:iam::123456789012:role/lambda-role"
-  filename      = "function.zip"
-}
+---
+
+# 📊 PART 3: Create Module Table (your requirement)
+
+Now create a **separate repo OR use one README**
+
+Add this:
+
+```markdown
+## Modules Overview
+
+| Module Name              | Latest Version | Provider | Registry |
+|-------------------------|---------------|----------|----------|
+| service-s3-bucket       | v1.0.1        | aws      | link     |
+| service-lambda-function | v1.0.0        | aws      | link     |
