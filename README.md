@@ -9,19 +9,17 @@
 
 ---
 
-## Service S3 Bucket Module
-
-### Overview
-This module provisions an AWS S3 bucket for storing data such as logs, backups, and static files.
+## Overview
+This module provisions an AWS S3 bucket for storage purposes.
 
 ---
 
-### Usage
+## Usage
 
 ```hcl
 module "s3_bucket" {
   source  = "app.terraform.io/nipun-org/service-s3-bucket/aws"
   version = "2.0.0"
 
-  bucket_name = "my-bucket-name"
+  bucket_name = "my-bucket"
 }
