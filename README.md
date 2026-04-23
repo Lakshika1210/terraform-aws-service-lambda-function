@@ -1,22 +1,17 @@
+# Service S3 Bucket Module
+
+## Overview
+This Terraform module provisions an AWS S3 bucket.  
+It can be used for storing application data, logs, backups, and static assets in a scalable and secure way.
 
 ---
 
-## ✅ For Lambda module
+## Usage
 
-Add same structure (overview + inputs + outputs)
+```hcl
+module "s3_bucket" {
+  source  = "app.terraform.io/nipun-org/service-s3-bucket/aws"
+  version = "2.0.0"
 
----
-
-# 📊 PART 3: Create Module Table (your requirement)
-
-Now create a **separate repo OR use one README**
-
-Add this:
-
-```markdown
-## Modules Overview
-
-| Module Name              | Latest Version | Provider | Registry |
-|-------------------------|---------------|----------|----------|
-| service-s3-bucket       | v1.0.1        | aws      | link     |
-| service-lambda-function | v1.0.0        | aws      | link     |
+  bucket_name = "my-bucket-name"
+}
