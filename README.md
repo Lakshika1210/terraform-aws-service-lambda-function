@@ -1,12 +1,22 @@
-# Service S3 Bucket Module
+# Terraform Modules Registry
 
-## Overview
-This Terraform module provisions an AWS S3 bucket.  
-It can be used for storing application data, logs, backups, and static assets in a scalable and secure way.
+## Modules
+
+| Module Name              | Latest Version | Provider | Downloads | Registry |
+|-------------------------|---------------|----------|-----------|----------|
+| service-s3-bucket       | v2.0.0        | aws      | -         | [View](https://github.com/Lakshika1210/terraform-aws-service-s3-bucket.git) |
+| service-lambda-function | v1.0.0        | aws      | -         | [View](https://github.com/Lakshika1210/terraform-aws-service-lambda-function.git) |
 
 ---
 
-## Usage
+## Service S3 Bucket Module
+
+### Overview
+This module provisions an AWS S3 bucket for storing data such as logs, backups, and static files.
+
+---
+
+### Usage
 
 ```hcl
 module "s3_bucket" {
